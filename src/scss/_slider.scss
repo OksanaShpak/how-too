@@ -1,0 +1,98 @@
+.slider {
+    width: 100%;
+    height: 100vh;
+    margin-left: -200px;
+    position: relative;
+    z-index: 0;
+
+
+    &__title {
+        visibility: hidden;
+        height: 1px;
+        overflow: hidden;
+    }
+
+    &__items {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    &__item {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transition: .5s;
+        transform: scale(0.8);
+        opacity: 0;
+
+        &.active {
+            transform: scale(1);
+            opacity: 1;
+            z-index: 2;
+
+        }
+
+        &>img {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            transform: translateX(-50%);
+        }
+
+        &>div {
+            position: relative;
+            margin-top: 85px;
+            margin-left: 200px;
+
+            &.text {
+                display: inline-block;
+                padding: 20px;
+                background-color: #0009;
+            }
+        }
+    }
+
+    &__controls {
+        display: flex;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 3;
+
+        &>button {
+            font-family: "Montserrat";
+            font-weight: 600;
+            font-size: 16px;
+            text-align: center;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: $dark-blue;
+            opacity: 0.8;
+
+            width: 70px;
+            height: 70px;
+            border: none;
+            outline: none;
+            background-color: #E0E0E0;
+            transition: .3s;
+            cursor: pointer;
+
+            &:focus,
+            &:hover {
+                transform: scale(1.5);
+                background-color: #55C6D7;
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+        }
+    }
+
+    &__left {}
+
+    &__right {}
+}

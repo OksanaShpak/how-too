@@ -1,0 +1,52 @@
+.page-wrapper {
+    position: relative;
+
+    .laptop-wrapper {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        box-sizing: border-box;
+
+        .laptop-container {
+            width: 553px;
+            height: 100%;
+            padding: 0 70px 260px;
+            background-color: $dark-blue;
+            box-sizing: border-box;
+
+            .logo {
+                margin-top: 70px;
+                margin-bottom: 100px;
+            }
+
+            .text-pair {
+                .text-pair__title {
+                    font-family: 'Monserat';
+                    font-weight: 400;
+                    font-size: 45px;
+                    margin-bottom: 40px;
+                    text-transform: uppercase;
+                }
+
+                .text-pair__content {
+                    font-family: "Nunito";
+                    margin-bottom: 30px;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 26px;
+                }
+            }
+        }
+
+        .laptop-img {
+            width: 100%;
+            height: 100%;
+            background-image: url(../assets/img/laptop.jpg);
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-size: cover;
+        }
+    }
+}

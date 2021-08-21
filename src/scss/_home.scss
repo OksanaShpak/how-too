@@ -1,0 +1,162 @@
+// TODO fix transcript
+// TODO fix fonts
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+
+    .container {
+        background-color: $dark-blue;
+        padding: 0 10px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .brand {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .moto {
+                font-family: Arial;
+                font-weight: 700;
+                font-size: 45px;
+                color: $grey;
+                -webkit-text-stroke: 2px #000000;
+                text-transform: uppercase;
+                margin-bottom: 170px;
+            }
+
+            .logo {
+                margin-bottom: 258px;
+            }
+
+            .CTA {
+                display: flex;
+
+                &__hand {
+                    margin-right: 24px;
+                    animation-duration: 3s;
+                    animation-iteration-count: infinite;
+                    transform-origin: right;
+                }
+
+                .hand-animation {
+                    animation-name: hand-animation;
+                    animation-timing-function: ease;
+                }
+
+                &__link {
+                    font-family: Arial;
+                    font-weight: 700;
+                    font-size: 22px;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+
+    .planet {
+        height: 93vh;
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+        }
+    }
+
+    .planet-animation {
+        animation-duration: 40s;
+        animation-iteration-count: infinite;
+        animation-name: planet-animation;
+        animation-timing-function: linear;
+    }
+}
+
+.player {
+    width: 100%;
+    height: 7vh;
+    opacity: 80%;
+    background-color: #C4C4C4;
+
+    .player__content {
+        padding: 21px 10px 0 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .play-button {
+            margin-right: 27px;
+        }
+
+        .progress-line {
+            width: 582px;
+            height: 4px;
+            background-color: #08395B;
+            border-radius: 18px;
+            margin-right: 30px;
+        }
+
+        .volume-button {
+            margin-right: 34px;
+        }
+
+        .transcript {
+            font-family: Arial, sans-serif;
+            font-weight: 700;
+            font-size: 14px;
+            color: #08395B;
+        }
+    }
+}
+
+audio{
+    background-color: #fff;
+    color: red;
+}
+
+
+@keyframes hand-animation {
+    0% {
+        transform: translateX(0);
+    }
+
+    10% {
+        transform: translateX(0);
+    }
+
+    30% {
+        transform: translateX(20px);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+
+    57% {
+        transform: translateX(0);
+    }
+
+    64% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes planet-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

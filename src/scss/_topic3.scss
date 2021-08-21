@@ -1,0 +1,74 @@
+.page-wrapper {}
+
+.topic3-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: relative;
+
+
+    .topic3-container {
+        width: 553px;
+        height: 100%;
+        padding: 0 70px;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0.93) 71.56%, rgba(0, 0, 0, 0) 91.36%);
+        box-sizing: border-box;
+        z-index: 2;
+        position: relative;
+        
+
+
+        .topic3-title {
+            font-family: "Monserat";
+            font-weight: 900;
+            line-height: 55px;
+            text-transform: uppercase;
+            margin-top: 85px;
+        }
+
+        .text-pair {
+            margin-top: 40px;
+
+
+            &__text {
+                font-family: "Nunito";
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 26px;
+                letter-spacing: 0.02em;
+                margin-bottom: 20px;
+
+            }
+
+            &__blockquote {
+                font-family: "Nunito";
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 26px;
+                letter-spacing: 0.03em;
+                position: relative;
+
+            }
+
+            &__blockquote::after {
+                content: '';
+            }
+
+            &__blockquote::before {
+                content: '';
+                position: absolute;
+                width: 6px;
+                height: 100%;
+                background-color: #55C6D7;
+                opacity: 0.95;
+                top: 0;
+                left: -13px;
+            }
+        }
+
+    }
+
+
+}

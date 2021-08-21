@@ -1,0 +1,58 @@
+.spoiler {
+    width: 555px;
+
+    &__item {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+        padding: 0 35px;
+        font-family: "Monserat";
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #0E1724;
+        background-color: #55C6D7;
+
+        >img {
+            transform: rotate(180deg);
+            transition: all .3s;
+
+        }
+    }
+
+
+    &__text {
+        height: 0;
+        padding: 0 32px;
+        transition: all .5s;
+        font-family: "Nunito";
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0.02em;
+        color: #0E1724;
+        background-color: #FFFFFF;
+        overflow: hidden;
+    }
+
+    &__checkbox:checked+&__title>img {
+        transform: rotateY(0deg);
+    }
+
+    &__checkbox:checked~&__text {
+        margin-top: 20px;
+        height: initial;
+        padding: 25px 32px 17px;
+    }
+}

@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'Arial';
+  src: url('./fonts/Arial-Bold.eot');
+  src: local('./fonts/Arial Bold'), local('Arial-Bold'),
+    url('./fonts/Arial-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Arial-Bold.woff') format('woff'),
+    url('./fonts/Arial-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat-Black.eot');
+  src: local('./fonts/Montserrat Black'), local('Montserrat-Black'),
+    url('./fonts/Montserrat-Black.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Montserrat-Black.woff') format('woff'),
+    url('./fonts/Montserrat-Black.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat-Bold.eot');
+  src: local('./fonts/Montserrat Bold'), local('Montserrat-Bold'),
+    url('./fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Montserrat-Bold.woff') format('woff'),
+    url('./fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat-ExtraBold.eot');
+  src: local('./fonts/Montserrat ExtraBold'), local('Montserrat-ExtraBold'),
+    url('./fonts/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Montserrat-ExtraBold.woff') format('woff'),
+    url('./fonts/Montserrat-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./fonts/Montserrat-SemiBold.eot');
+  src: local('./fonts/Montserrat SemiBold'), local('Montserrat-SemiBold'),
+    url('./fonts/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Montserrat-SemiBold.woff') format('woff'),
+    url('./fonts/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('./fonts/Nunito-Bold.eot');
+  src: local('./fonts/Nunito Bold'), local('Nunito-Bold'),
+    url('./fonts/Nunito-Bold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/Nunito-Bold.woff') format('woff'),
+    url('./fonts/Nunito-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('./fonts/OpenSans-ExtraBold.eot');
+  src: local('./fonts/Open Sans ExtraBold'), local('OpenSans-ExtraBold'),
+    url('./fonts/OpenSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/OpenSans-ExtraBold.woff') format('woff'),
+    url('./fonts/OpenSans-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
